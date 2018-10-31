@@ -1,9 +1,11 @@
 ---
-title: "Holy cow!"
+title: "Jianghui's Website"
 ---
 
-### I have a webpage!
+### Welcome to my personal webpage:)
 
-And I can put all kinds of stuff on it!
 
+Here are my plotly weather plots!
 [dashboard](flexdashboard.html)
+
+<img src="images/image.jpg" style="width:75%">
