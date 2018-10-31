@@ -1,11 +1,13 @@
 ---
-title: "Jianghui's Website"
+title: "Jianghui Lin"
 ---
 
-### Welcome to my personal webpage:)
+## Welcome to my personal webpage:)
 
+### You may download my [resume](Jianghui_Resume.html) here!
 
-Here are my plotly weather plots!
-[dashboard](flexdashboard.html)
+###Check out my [plotly weather plots](flexdashboard.html)!
+
 
 <img src="images/image.jpg" style="width:75%">
+
