@@ -36,18 +36,17 @@ weather_df =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A Scatterplot
+### Chart A Scatterplot Maximum Temperature Vs. Minimum Temperature
 
 ```{r}
 weather_df %>%
-  plot_ly(x = ~tmin, y = ~tmax, type = "scatter",
-          alpha = 0.5)
+  plot_ly(x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",color=~name,alpha = 0.7)
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Chart B Boxplot for Maximum Temperature
 
 ```{r}
 weather_df %>% 
@@ -55,9 +54,12 @@ plot_ly(y = ~tmax, color = ~name, type = "box",
           colors = "Set3")
 ```
 
-### Chart C
+### Chart C Precipitation bargraph 
 
 ```{r}
 weather_df %>% 
-  plot_ly(x = ~name, y = ~tmax, color = ~name, type = "bar")
+  group_by(name) %>% 
+  mutate(prcp_sum=sum(prcp,na.rm=T)) %>% 
+  distinct(name,prcp_sum) %>% 
+  plot_ly(x = ~name, y = ~prcp_sum, color = ~name, type = "bar",colors = "Set3")
 ```
