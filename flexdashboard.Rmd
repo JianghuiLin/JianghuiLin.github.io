@@ -12,7 +12,7 @@ library(tidyverse)
 library(viridis)
 library(p8105.datasets)
 #install.packages("plotly")
-library(plotly)
+library(plotly)   # load library
 ```
 
 
@@ -28,7 +28,7 @@ weather_df =
                       USS0023B17S = "Waterhole_WA"),
     tmin = tmin / 10,
     tmax = tmax / 10) %>%
-  select(name, id, everything())
+  select(name, id, everything())     # get data from rnoaa and select all data from 3 locations: CentralPark_NY,Waikiki_HA,Waterhole_WA)
 ```
 
 
@@ -41,6 +41,7 @@ Column {data-width=650}
 ```{r}
 weather_df %>%
   plot_ly(x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",color=~name,alpha = 0.7)
+# Here is a scattorplot plotting minimum temperature vs maximum temperatures.Colored by location names.
 ```
 
 Column {data-width=350}
@@ -52,6 +53,7 @@ Column {data-width=350}
 weather_df %>% 
 plot_ly(y = ~tmax, color = ~name, type = "box",
           colors = "Set3")
+#Here is a boxplot and each box represent the range of tmax of specific locations.
 ```
 
 ### Chart C Precipitation bargraph 
@@ -62,4 +64,5 @@ weather_df %>%
   mutate(prcp_sum=sum(prcp,na.rm=T)) %>% 
   distinct(name,prcp_sum) %>% 
   plot_ly(x = ~name, y = ~prcp_sum, color = ~name, type = "bar",colors = "Set3")
+#here is a barplot showing the total amount of precipitation in each locations,colored by location names.
 ```
