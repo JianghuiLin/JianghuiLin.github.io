@@ -4,10 +4,16 @@ title: "Jianghui Lin"
 
 ## Welcome to my personal webpage:)
 
-### You may download my [resume](Jianghui_Resume.html) here!
+#### - First-year master student studying biostatistics at Columbia Univerity [Mailman of Public Health](https://www.mailman.columbia.edu/)
 
-###Check out my [plotly weather plots](flexdashboard.html)!
+#### - Department: Biostatistics [departement website](https://www.mailman.columbia.edu/become-student/departments/biostatistics)
 
+
+#### - You may download my [resume](Jianghui_Resume.html) here!
+
+#### - Check out my [plotly weather plots](flexdashboard.html)!
 
 <img src="images/image.jpg" style="width:75%">
+
+
 

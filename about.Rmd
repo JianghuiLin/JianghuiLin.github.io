@@ -4,6 +4,6 @@ title: "About"
 
 ### About this site
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
-
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
+#### This is my personal website which hosted by [github](http://github.com)
+#### You may find my source code my repository at github [repository](https://github.com/JianghuiLin/JianghuiLin.github.io.git)
+#### I learned from P8105 Data Science [website](http://p8105.com/making_websites.html) while building this site. 
